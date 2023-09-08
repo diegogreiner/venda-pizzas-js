@@ -129,7 +129,7 @@ function updateCart() {
             cartItem.querySelector('.cart--item-nome').innerHTML = pizzaName;
             cartItem.querySelector('.cart--item--qt').innerHTML = cart[i].qt;
             cartItem.querySelector('.cart--item-qtmenos').addEventListener('click',()=>{
-                if(cart[i.qt > 1]) {
+                if(cart[i].qt > 1) {
                     cart[i].qt--;
                 } else {
                     cart.splice(i, 1);
